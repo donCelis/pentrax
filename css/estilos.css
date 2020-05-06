@@ -1,0 +1,238 @@
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+   list-style: none;
+   outline: 0;/*Consultar*/
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+body{
+   font-family: sans-serif;
+}
+/*Cabecera principal*/
+.home header{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+}
+.mainMenu a{
+   font-weight: 400;/*Grosor de la fuente*/
+   text-transform: capitalize;
+   margin: 0 5px;
+   border-radius: 4px;
+   padding: 10px 20px;
+}
+.mainMenu a:hover{
+   color: white;
+   background: linear-gradient(90deg, #ff7b57, #ff6448);
+}
+/*Estilos compartidos*/
+.title{
+   margin: 20px 0 40px;
+   font-weight: bold;
+   font-size: 2em;
+   color: #243c61;
+}
+.subTitle{
+   font-size: 1em;
+   color: #ff6449;
+}
+.btnMain{
+   background: #ffe9e5;
+   color: #fd6449;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.btnSecond{
+   background: linear-gradient(90deg, #ff7b57, #ff6448);
+   padding: 10px 20px;
+   border-radius: 4px;
+   color: white;
+   cursor: pointer;
+}
+.img-fluid{
+   width: 100%;
+   vertical-align: middle;
+}
+.container{
+   margin: 0 auto;/*Cuando no centro con flexbox*/
+   width: 85%;/*Porcentajes son medidas relativas*/
+}
+.row{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.column{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+.spaceBt{
+   justify-content: space-between;
+}
+.alignCenter{
+   align-items: center;
+}
+.stretch{
+   align-items: stretch;
+}
+/*Contenido del home*/
+.contHome{
+   margin-top: 80px;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.text{
+   flex-basis: 35%;
+}
+.photo{
+   flex-basis: 55%;
+}
+.text h2{
+   font-size: 3em;
+   line-height: 60px;
+}
+.text p{
+   margin: 30px 0;
+}
+.form{
+   border: 1px solid rgba(0, 0, 0, 0.2);/*grosor estilo color*/
+   border-radius: 3px;
+   padding: 2px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.form input{
+   padding: 10px;
+   outline: 0;
+   text-transform: capitalize;
+   font-size: 1em;
+}
+.form button{
+   font-size: 1.4em;
+   text-transform: capitalize;
+   font-weight: 100;
+}
+/*Estilos para feature*/
+.feature{
+   text-align: center;
+   padding: 40px 0;
+}
+.itemsF{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.itemsF li{
+   flex-basis: 30%;
+}
+.itemsF li h5{
+   margin: 20px 0 10px;
+}
+/*Digital solutions*/
+.digitalS{
+   padding: 50px 0;
+}
+.iconS, .iconP{
+   /*display: inline-flex;*/
+   padding: 15px;
+   border-radius: 4px;
+   max-width: 36px;
+   min-width: 36px;
+   text-align: center;
+}
+.iconS{
+   background: #fcd8e1;
+}
+.iconP{
+   background: #dde8fa;
+}
+.digitalS aside{
+   flex-basis: 45%;
+}
+.elements{
+   margin-top: 30px;
+}
+.elements li{
+   flex-basis: 45%;
+}
+.elements li h3{
+   color: #243d60;
+   margin: 20px 0;
+   text-transform: capitalize;
+}
+.socialT{
+   padding: 50px 0;
+}
+.socialT aside{
+   flex-basis: 40%;
+}
+.socialT .btnMain{
+   margin-top: 20px;
+   font-size: 1em;
+}
+.plans{
+   text-align: center;
+   padding: 50px 0;
+}
+.listPrices{
+   margin: 40px 0;
+}
+.listPrices li{
+   flex-basis: 30%;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+   padding: 50px 0;
+}
+.listPrices li div{
+   max-width: 80px;
+   min-width: 80px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+.price{
+   font-size: 2em;
+   margin-bottom: 10px;
+}
+.listPrices li h5{
+   margin-bottom: 28px;
+   font-size: 1.3em;
+   text-transform: capitalize;
+}
+.listPrices li p{
+   margin-bottom: 15px;
+   color: rgba(0, 0, 0, 0.5);
+}
+.counters{
+   text-align: left;
+}
+.counters div:last-child{
+   margin-left: 20px;
+}
+.counters div h3{
+   font-size: 2.5em;
+   margin-bottom: 10px;
+}
+.counters div p{
+   text-transform: capitalize;
+}
+.broken{
+   background: #ff00ff;
+   width: 1px;
+   height: 1px;
+   position: fixed;
+   top: 126px;
+   left: 242px;
+   z-index: 999999999;
+}
